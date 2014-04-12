@@ -1,0 +1,4 @@
+MODXInit
+========
+
+Quickstart for MODX
