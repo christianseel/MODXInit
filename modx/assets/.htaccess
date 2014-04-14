@@ -48,7 +48,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
     Options +FollowSymlinks
     Options -MultiViews
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /assets/
 </IfModule>
 
 
