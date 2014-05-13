@@ -67,7 +67,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 # Rewrite www.domain.com -> domain.com
 #RewriteCond %{HTTP_HOST} .
 #RewriteCond %{HTTP_HOST} !^name.kunden.chsmedien\.de [NC]
-#RewriteRule (.*) https://name.kunden.chsmedien.de/$1 [R=301,L]
+#RewriteRule (.*) http://name.kunden.chsmedien.de/$1 [R=301,L]
 
 # Rewrite to force SSL (optional if available)
 #RewriteCond %{SERVER_PORT} 80 
