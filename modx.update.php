@@ -27,7 +27,6 @@ exec('rm -rf modx-new;');
  
 // copy components over
 exec('cp -Rf _modx/_core/components _modx/core');
-exec('cp -Rf _modx/_manager/assets/components _modx/manager/assets');
  
 // move packages over make sure not to bring old core files
 exec('rm -rf _modx/_core/packages/core; rm -rf _modx/_core/packages/core.transport.zip; cp -Rf _modx/_core/packages/* _modx/core/packages/;');
