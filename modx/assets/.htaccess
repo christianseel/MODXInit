@@ -52,6 +52,28 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 </IfModule>
 
 
+# ----------------------------------------------------------------------
+# Domain Rewrite – update RewriteBase to /
+# ----------------------------------------------------------------------
+
+# Rewrite domain.com/assets -> assets.domain.com
+#RewriteCond %{HTTP_HOST} .
+#RewriteCond %{REQUEST_URI} !^/assets/components/ [NC]
+#RewriteCond %{HTTP_HOST} !^assets.octanorm.kunden.chsmedien\.de [NC]
+#RewriteRule (.*) http://assets.octanorm.kunden.chsmedien.de/$1 [R=301,L]
+
+
+
+
+# ----------------------------------------------------------------------
+#  filename based cache busting
+# ----------------------------------------------------------------------
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.(\d+)\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|eot|ttf|woff)$ $1.$3
+
+
 
 
 # ----------------------------------------------------------------------
@@ -186,27 +208,6 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 
 Header unset ETag
 FileETag None
-
-
-
-# ----------------------------------------------------------------------
-# Domain Rewrite
-# ----------------------------------------------------------------------
-
-# Rewrite www.domain.com -> domain.com
-#RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} !^static.kunde\.de [NC]
-#RewriteRule (.*) http://static.kunde.de/$1 [R=301,L]
-
-
-
-# ----------------------------------------------------------------------
-#  filename based cache busting
-# ----------------------------------------------------------------------
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)\.(\d+)\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|eot|ttf|woff)$ $1.$3
 
 
 
