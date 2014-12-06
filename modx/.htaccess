@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------
 
 # php cgi 5.4.x
-AddHandler php54-cgi .php
+#AddHandler php54-cgi .php
 
 # set default timezone
 php_value date.timezone "Europe/Berlin"
@@ -32,6 +32,8 @@ php_flag magic_quotes_gpc Off
 
 # register_globals off
 php_flag register_globals Off
+
+ServerSignature Off
 
 
 
@@ -102,7 +104,6 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 	deny from all
 </FilesMatch>
 
-
 # Block access to backup and source files
 # This files may be left by some text/html editors and
 # pose a great security danger, when someone can access them
@@ -111,6 +112,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 	Deny from all
 	Satisfy All
 </FilesMatch>
+
 
 
 
@@ -137,6 +139,24 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 
 
 
+
+# ----------------------------------------------------------------------
+# MODX StaticCache
+# ----------------------------------------------------------------------
+
+# statcache rewrite rules
+#RewriteCond %{HTTP_USER_AGENT} !MODX\ RegenCache
+#RewriteCond %{QUERY_STRING} ^$
+#RewriteCond %{REQUEST_METHOD} !POST
+#RewriteCond %{DOCUMENT_ROOT}statcache/%{REQUEST_URI}~index.html -f
+#RewriteRule ^(.*)$ /statcache/$1~index.html [L,QSA]
+
+#RewriteCond %{HTTP_USER_AGENT} !MODX\ RegenCache
+#RewriteCond %{QUERY_STRING} ^$
+#RewriteCond %{REQUEST_METHOD} !POST
+#RewriteCond %{DOCUMENT_ROOT}statcache/%{REQUEST_URI} -f
+#RewriteRule ^(.*)$ /statcache/$1 [L,QSA]
+
 # ----------------------------------------------------------------------
 # MODX Friendly URLs part
 # ----------------------------------------------------------------------
@@ -144,6 +164,57 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+
+
+
+# ----------------------------------------------------------------------
+#  expire headers
+# ----------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	
+	# Data interchange
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+    
+    # Web feeds
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+    
+    
+	#css
+	ExpiresByType text/css "access plus 1 year"
+	#js
+	ExpiresByType application/javascript "access plus 1 year"
+	ExpiresByType application/x-javascript "access plus 1 year"
+	#images
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType image/x-icon "access plus 1 year"
+	#webfonts
+	ExpiresByType application/x-font-ttf    "access plus 1 year"
+	ExpiresByType font/opentype             "access plus 1 year"
+	ExpiresByType application/x-font-woff   "access plus 1 year"
+	ExpiresByType application/font-woff    "access plus 1 year"
+	ExpiresByType image/svg+xml             "access plus 1 year"
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+</IfModule>
+
+
+# Remove `ETags` as resources are sent with far-future expires headers.
+# https://developer.yahoo.com/performance/rules.html#etags
+# `FileETag None` doesn't work in all cases.
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
 
 
 
