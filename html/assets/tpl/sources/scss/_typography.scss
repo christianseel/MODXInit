@@ -1,0 +1,80 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	Typography
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	
+	h1,h2,h3,h4,h5,h6 {
+    	text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+        	
+		&.small-margin-top {
+			margin-top: rem(16);
+		}
+		
+		strong {
+    		font-weight: $font-weight-bold;
+		}
+	}
+	
+    p {
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+    }
+    
+	a {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		transition: color .15s ease-in-out;
+		font-weight: $font-weight-semibold;
+		
+		&:hover, &:focus {
+			outline: none;
+		}
+
+		&::-moz-focus-inner {
+			border: 0 !important;
+		}
+	}
+	
+	small {
+    	color: $small-font-color;
+		a {
+			color: scale-color($small-font-color, $lightness: -15%);
+		}
+	}
+	
+	.weight-normal {
+		font-weight: $font-weight-normal !important;
+	}
+	
+	.weight-bold {
+		font-weight: $font-weight-bold !important;
+	}
+	
+	.primarytext {
+		color: $primary-color !important;
+	}
+	
+	.secondarytext {
+		color: $secondary-color !important;
+	}
+	
+	.graytext {
+		color: $gray-color !important;
+	}
+	
+	.bodytext {
+		color: $body-font-color !important;
+	}
+	
+	.whitetext {
+		color: #fff !important;
+	}
+		
+	.redtext {
+    	color: $alert-color !important;
+	}
+	
+	.greentext {
+    	color: $success-color !important;
+	}

@@ -1,0 +1,23 @@
+{
+    "name": "MODXInit",
+    "homepage": "https://github.com/chsmedien/MODXInit",
+    "authors": [
+        "Christian Seel <cs@chsmedien.de>"
+    ],
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "foundation": "5.x.x",
+        "slick.js": "1.x.x",
+        "lazysizes": "1.x.x",
+        "modularized-normalize-scss": "3.x.x",
+        "svg4everybody": "1.x.x",
+        "respimage": "1.x.x"
+    }
+}

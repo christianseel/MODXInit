@@ -1,0 +1,51 @@
+node_modules/*
+npm-debug.log
+
+# ignore all IIS files
+web.config
+
+# ignore all config.core.php
+config.core.php
+!setup/includes/config.core.php
+
+# ignore concatenated js
+modext.js
+
+# ignore various IDE project files and folders
+.idea/
+.buildpath
+.project
+.settings/
+nbproject/
+
+# ignore php and txt files beginning with test in root directory
+/test*.php
+/test*.txt
+/test/*
+
+# ignore mac files
+.DS_Store
+
+# ignore setup config files
+setup/config.xml
+setup/config.new.xml
+setup/config.upgrade.xml
+setup/config.upgrade-advanced.xml
+
+# ignore some MODX files
+core/cache/
+core/packages/*/
+/assets/uploads
+/assets/components/phpthumbof/cache
+
+#ignore qsync file from QNAP
+.qicon
+
+#ignore composer files
+composer.json
+composer.lock
+
+!.gitkeep
+
+#ignore files after installing MODX
+ht.access

@@ -1,0 +1,148 @@
+name: new_project
+data_directory: _gitify/
+data:
+  contexts:
+    class: modContext
+    primary: key
+  context_settings:
+    class: modContextSetting
+    primary: [context_key, key]
+  content_types:
+    class: modContentType
+    primary: name
+  content:
+    type: content
+    exclude_keys:
+      - createdon
+      - editedby
+      - editedon
+  categories:
+    class: modCategory
+    primary: category
+  templates:
+    class: modTemplate
+    primary: templatename
+  template_variables:
+    class: modTemplateVar
+    primary: name
+  template_variables_access:
+    class: modTemplateVarTemplate
+    primary: [tmplvarid, templateid]
+  chunks:
+    class: modChunk
+    primary: name
+    extension: .html
+  snippets:
+    class: modSnippet
+    primary: name
+    extension: .php
+  plugins:
+    class: modPlugin
+    primary: name
+    extension: .php
+  plugin_events:
+    class: modPluginEvent
+    primary: [pluginid,event]
+    
+  users:
+    class: modUser
+    primary: id
+  user_profiles:
+    class: modUserProfile
+    primary: internalKey
+    exclude_keys:
+      - sessionid
+      - thislogin
+      - lastlogin
+      - logincount
+      - failedloginattempts
+  user_groups:
+    class: modUserGroup
+    primary: id
+  user_group_members:
+    class: modUserGroupMember
+    primary: id
+  user_group_roles:
+    class: modUserGroupRole
+    primary: id
+      
+  events:
+    class: modEvent
+    primary: name
+  namespaces:
+    class: modNamespace
+    primary: name
+  mediasources:
+    class: modMediaSource
+    primary: id
+  mediasource_elements:
+    class: sources.modMediaSourceElement
+    primary: [source, object_class, object, context_key]
+  extension_packages:
+    class: modExtensionPackage
+    primary: namespace
+  system_settings:
+    class: modSystemSetting
+    primary: key
+    exclude_keys:
+      - editedon
+  
+  dashboards:
+    class: modDashboard
+    primary: [id, name]
+  dashboard_widgts:
+    class: modDashboardWidget
+    primary: id
+  dashboard_widget_placement:
+    class: modDashboardWidgetPlacement
+    primary: [dashboard, widget]
+
+  migx_config:
+    class: migxConfig
+    primary: id
+    package: migx
+  migx_formtab:
+    class: migxFormtab
+    primary: id
+  migx_formtab_field:
+    class: migxFormtabField
+    primary: id
+  migx_config_element:
+    class: migxConfigElement
+    primary: id
+  migx_element:
+    class: migxElement
+    primary: id
+
+  moregallery_image:
+    class: mgImage
+    primary: [resource, id]
+    package: moregallery
+    exclude_keys:
+      - editedon
+      - mgr_thumb_path
+      - file_url
+      - file_path
+      - view_url
+  moregallery_image_tag:
+    class: mgImageTag
+    primary: id
+  moregallery_image_crop:
+    class: mgImageCrop
+    primary: id
+  moregallery_tag:
+    class: mgTag
+    primary: display
+
+packages: 
+  modx.com:
+    service_url: http://rest.modx.com/extras/
+    packages:
+      - ace
+      - getresources
+      - translit
+      - wayfinder
+      - fastfield
+      - pthumb
+      - migx
+      - versionx

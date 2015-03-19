@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "fonts-woff2.css",
+	"sources": [
+		"../sources/scss/fonts-woff2.scss",
+		"../sources/scss/_font-opensans-woff2.scss",
+		"../sources/scss/_font-trashhand-woff2.scss"
+	],
+	"sourcesContent": [],
+	"mappings": ";;ECEI,AAAa;EACb,AAAs6gF;EACt6gF,AAAa;EACb,AAAY;;;EAKZ,AAAa;EACb,AAA01pB;EAC11pB,AAAa;EACb,AAAY;;;EAKZ,AAAa;EACb,AAA0otB;EAC1otB,AAAa;EACb,AAAY;;;EAKZ,AAAa;EACb,AAA81tB;EAC91tB,AAAa;EACb,AAAY;;;;EC3BZ,AAAa;EACb,AAAsjiB;EACtjiB,AAAa;EACb,AAAY",
+	"names": []
+}

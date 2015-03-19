@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800&subset=latin");
+
+.redactor_editor {
+	// normalize.css
+	@import "../bower_components/modularized-normalize-scss/normalize";
+}
+
+// foundation settings
+@import "settings";
+
+.redactor_editor, .redactor_dropdown_box_styles {
+	// Foundation components
+	@import "../bower_components/foundation/scss/foundation/components/buttons";
+	@import "../bower_components/foundation/scss/foundation/components/type";
+	@import "_atoms";
+	@import "_typography";
+}
+
+
+
+.redactor_editor, .redactor_dropdown_box_styles {
+	*, p, div, ul, ol, table, dl, blockquote, pre, span {
+		font-family: $body-font-family !important;
+		color: $body-font-color;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $header-font-family !important;
+	}
+}
+
+.redactor_dropdown_box_styles {
+	a {
+    	font-weight: normal;
+		color: #222;
+	}
+	.large-font {
+    	font-size: 15px;
+	}
+	.xxlarge-font {
+    	font-size: 17px;
+	}
+	.whitetext {
+    	background: #ddd;
+	}
+	.redactor_dropdown_remove {
+		margin: 5px -10px -10px -10px;
+		padding: 5px 15px;
+		background: red;
+		color: #fff;
+		font-weight: bold;
+	}
+}

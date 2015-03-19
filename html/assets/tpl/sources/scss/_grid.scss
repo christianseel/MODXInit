@@ -1,0 +1,39 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	Grid
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	.row {
+		position: relative;
+	}
+		
+	@media #{$small-up} {
+		.small-vertical-center {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	
+	@media #{$medium-up} {
+		.medium-vertical-center {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	
+	@media #{$large-up} {
+		.large-vertical-center {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	
+	@media #{$xlarge-up} {
+		.xlarge-vertical-center {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}

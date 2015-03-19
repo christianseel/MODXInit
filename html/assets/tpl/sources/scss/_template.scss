@@ -1,0 +1,21 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	Template
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+//  Basic Styles
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    html, body {
+        height: auto;
+        min-height: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        -webkit-font-smoothing: $font-smoothing;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: $paragraph-font-size;
+    }

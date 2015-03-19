@@ -1,0 +1,981 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800&subset=latin");
+.redactor_editor {
+  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+  /**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+  /**
+ * Remove default margin.
+ */
+  /* HTML5 display definitions
+   ========================================================================== */
+  /**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+  /**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+  /*
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+  /*
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+  /* Links
+   ========================================================================== */
+  /**
+ * Remove the gray background color from active links in IE 10.
+ */
+  /**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+  /* Text-level semantics
+   ========================================================================== */
+  /**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+  /**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in Safari and Chrome.
+ */
+  /**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in IE 8/9.
+ */
+  /**
+ * Address inconsistent and variable font size in all browsers.
+ */
+  /**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+  /* Embedded content
+   ========================================================================== */
+  /**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+  /**
+ * Correct overflow not hidden in IE 8/9/10/11.
+ */
+  /* Grouping content
+   ========================================================================== */
+  /**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+  /**
+ * Address differences between Firefox and other browsers.
+ */
+  /**
+ * Contain overflow in all browsers.
+ */
+  /**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+  /* Forms
+   ========================================================================== */
+  /**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+  /**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+  /**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+  /**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+  /**
+ * Re-set default cursor for disabled elements.
+ */
+  /**
+ * Remove inner padding and border in Firefox 4+.
+ */
+  /**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+  /**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+  /**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+  /**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+  /**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+  /**
+ * Define consistent border, margin, and padding.
+ */
+  /**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+  /**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+  /**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+  /* Tables
+   ========================================================================== */
+  /**
+ * Remove most spacing between table cells.
+ */ }
+  .redactor_editor html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */ }
+  .redactor_editor body {
+    margin: 0; }
+  .redactor_editor article, .redactor_editor aside, .redactor_editor details, .redactor_editor figcaption, .redactor_editor figure, .redactor_editor footer, .redactor_editor header, .redactor_editor hgroup, .redactor_editor main, .redactor_editor menu, .redactor_editor nav, .redactor_editor section, .redactor_editor summary {
+    display: block; }
+  .redactor_editor audio, .redactor_editor canvas, .redactor_editor progress, .redactor_editor video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */ }
+  .redactor_editor audio:not([controls]) {
+    display: none;
+    height: 0; }
+  .redactor_editor [hidden], .redactor_editor template {
+    display: none; }
+  .redactor_editor a {
+    background-color: transparent; }
+  .redactor_editor a:active, .redactor_editor a:hover {
+    outline: 0; }
+  .redactor_editor abbr[title] {
+    border-bottom: 1px dotted; }
+  .redactor_editor b, .redactor_editor strong {
+    font-weight: bold; }
+  .redactor_editor dfn {
+    font-style: italic; }
+  .redactor_editor h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  .redactor_editor mark {
+    background: #ff0;
+    color: #000; }
+  .redactor_editor small {
+    font-size: 80%; }
+  .redactor_editor sub, .redactor_editor sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  .redactor_editor sup {
+    top: -0.5em; }
+  .redactor_editor sub {
+    bottom: -0.25em; }
+  .redactor_editor img {
+    border: 0; }
+  .redactor_editor svg:not(:root) {
+    overflow: hidden; }
+  .redactor_editor figure {
+    margin: 1em 40px; }
+  .redactor_editor hr {
+    box-sizing: content-box;
+    height: 0; }
+  .redactor_editor pre {
+    overflow: auto; }
+  .redactor_editor code, .redactor_editor kbd, .redactor_editor pre, .redactor_editor samp {
+    font-family: monospace, monospace;
+    font-size: 1em; }
+  .redactor_editor button, .redactor_editor input, .redactor_editor optgroup, .redactor_editor select, .redactor_editor textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */ }
+  .redactor_editor button {
+    overflow: visible; }
+  .redactor_editor button, .redactor_editor select {
+    text-transform: none; }
+  .redactor_editor button, .redactor_editor html input[type="button"], .redactor_editor input[type="reset"], .redactor_editor input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */ }
+  .redactor_editor button[disabled], .redactor_editor html input[disabled] {
+    cursor: default; }
+  .redactor_editor button::-moz-focus-inner, .redactor_editor input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .redactor_editor input {
+    line-height: normal; }
+  .redactor_editor input[type="checkbox"], .redactor_editor input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  .redactor_editor input[type="number"]::-webkit-inner-spin-button, .redactor_editor input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  .redactor_editor input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    /* 2 */
+    box-sizing: content-box; }
+  .redactor_editor input[type="search"]::-webkit-search-cancel-button, .redactor_editor input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  .redactor_editor fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  .redactor_editor legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  .redactor_editor textarea {
+    overflow: auto; }
+  .redactor_editor optgroup {
+    font-weight: bold; }
+  .redactor_editor table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .redactor_editor th, .redactor_editor td {
+    padding: 0; }
+
+.redactor_editor, .redactor_dropdown_box_styles {
+  /* Typography resets */
+  /* Default Link Styles */
+  /* Default paragraph styles */
+  /* Default header styles */
+  /* Helpful Typography Defaults */
+  /* Lists */
+  /* Unordered Lists */
+  /* Ordered Lists */
+  /* Definition Lists */
+  /* Abbreviations */
+  /* Blockquotes */
+  /* Microformats */
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	Atom Styles
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	Typography
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ }
+  .redactor_editor meta.foundation-version, .redactor_dropdown_box_styles meta.foundation-version {
+    font-family: "/5.5.1/"; }
+  .redactor_editor meta.foundation-mq-small, .redactor_dropdown_box_styles meta.foundation-mq-small {
+    font-family: "/only screen/";
+    width: 0rem; }
+  .redactor_editor meta.foundation-mq-small-only, .redactor_dropdown_box_styles meta.foundation-mq-small-only {
+    font-family: "/only screen and (max-width: 47.9375rem)/";
+    width: 0rem; }
+  .redactor_editor meta.foundation-mq-medium, .redactor_dropdown_box_styles meta.foundation-mq-medium {
+    font-family: "/only screen and (min-width:48rem)/";
+    width: 48rem; }
+  .redactor_editor meta.foundation-mq-medium-only, .redactor_dropdown_box_styles meta.foundation-mq-medium-only {
+    font-family: "/only screen and (min-width:48rem) and (max-width:63.9375rem)/";
+    width: 48rem; }
+  .redactor_editor meta.foundation-mq-large, .redactor_dropdown_box_styles meta.foundation-mq-large {
+    font-family: "/only screen and (min-width:64rem)/";
+    width: 64rem; }
+  .redactor_editor meta.foundation-mq-large-only, .redactor_dropdown_box_styles meta.foundation-mq-large-only {
+    font-family: "/only screen and (min-width:64rem) and (max-width:74.9375rem)/";
+    width: 64rem; }
+  .redactor_editor meta.foundation-mq-xlarge, .redactor_dropdown_box_styles meta.foundation-mq-xlarge {
+    font-family: "/only screen and (min-width:75rem)/";
+    width: 75rem; }
+  .redactor_editor meta.foundation-mq-xlarge-only, .redactor_dropdown_box_styles meta.foundation-mq-xlarge-only {
+    font-family: "/only screen and (min-width:75rem) and (max-width:79rem)/";
+    width: 75rem; }
+  .redactor_editor meta.foundation-mq-xxlarge, .redactor_dropdown_box_styles meta.foundation-mq-xxlarge {
+    font-family: "/only screen and (min-width:79.0625rem)/";
+    width: 79.0625rem; }
+  .redactor_editor meta.foundation-data-attribute-namespace, .redactor_dropdown_box_styles meta.foundation-data-attribute-namespace {
+    font-family: false; }
+  .redactor_editor html, .redactor_editor body, .redactor_dropdown_box_styles html, .redactor_dropdown_box_styles body {
+    height: 100%; }
+  .redactor_editor *, .redactor_editor *:before, .redactor_editor *:after, .redactor_dropdown_box_styles *, .redactor_dropdown_box_styles *:before, .redactor_dropdown_box_styles *:after {
+    box-sizing: border-box; }
+  .redactor_editor html, .redactor_editor body, .redactor_dropdown_box_styles html, .redactor_dropdown_box_styles body {
+    font-size: 100%; }
+  .redactor_editor body, .redactor_dropdown_box_styles body {
+    background: #007fbe;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-family: "open_sans", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    position: relative;
+    cursor: auto; }
+  .redactor_editor a:hover, .redactor_dropdown_box_styles a:hover {
+    cursor: pointer; }
+  .redactor_editor img, .redactor_dropdown_box_styles img {
+    max-width: 100%;
+    height: auto; }
+  .redactor_editor img, .redactor_dropdown_box_styles img {
+    -ms-interpolation-mode: bicubic; }
+  .redactor_editor #map_canvas img, .redactor_editor #map_canvas embed, .redactor_editor #map_canvas object, .redactor_editor .map_canvas img, .redactor_editor .map_canvas embed, .redactor_editor .map_canvas object, .redactor_dropdown_box_styles #map_canvas img, .redactor_dropdown_box_styles #map_canvas embed, .redactor_dropdown_box_styles #map_canvas object, .redactor_dropdown_box_styles .map_canvas img, .redactor_dropdown_box_styles .map_canvas embed, .redactor_dropdown_box_styles .map_canvas object {
+    max-width: none !important; }
+  .redactor_editor .left, .redactor_dropdown_box_styles .left {
+    float: left !important; }
+  .redactor_editor .right, .redactor_dropdown_box_styles .right {
+    float: right !important; }
+  .redactor_editor .clearfix:before, .redactor_editor .clearfix:after, .redactor_dropdown_box_styles .clearfix:before, .redactor_dropdown_box_styles .clearfix:after {
+    content: " ";
+    display: table; }
+  .redactor_editor .clearfix:after, .redactor_dropdown_box_styles .clearfix:after {
+    clear: both; }
+  .redactor_editor .hide, .redactor_dropdown_box_styles .hide {
+    display: none; }
+  .redactor_editor .invisible, .redactor_dropdown_box_styles .invisible {
+    visibility: hidden; }
+  .redactor_editor .antialiased, .redactor_dropdown_box_styles .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .redactor_editor img, .redactor_dropdown_box_styles img {
+    display: inline-block;
+    vertical-align: middle; }
+  .redactor_editor textarea, .redactor_dropdown_box_styles textarea {
+    height: auto;
+    min-height: 50px; }
+  .redactor_editor select, .redactor_dropdown_box_styles select {
+    width: 100%; }
+  .redactor_editor button, .redactor_editor .button, .redactor_dropdown_box_styles button, .redactor_dropdown_box_styles .button {
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-family: "open_sans", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    background-color: #009fe3;
+    border-color: #007fb6;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out; }
+    .redactor_editor button:hover, .redactor_editor button:focus, .redactor_editor .button:hover, .redactor_editor .button:focus, .redactor_dropdown_box_styles button:hover, .redactor_dropdown_box_styles button:focus, .redactor_dropdown_box_styles .button:hover, .redactor_dropdown_box_styles .button:focus {
+      background-color: #007fb6; }
+    .redactor_editor button:hover, .redactor_editor button:focus, .redactor_editor .button:hover, .redactor_editor .button:focus, .redactor_dropdown_box_styles button:hover, .redactor_dropdown_box_styles button:focus, .redactor_dropdown_box_styles .button:hover, .redactor_dropdown_box_styles .button:focus {
+      color: #FFFFFF; }
+    .redactor_editor button.secondary, .redactor_editor .button.secondary, .redactor_dropdown_box_styles button.secondary, .redactor_dropdown_box_styles .button.secondary {
+      background-color: #ffe350;
+      border-color: #ffd80d;
+      color: #FFFFFF; }
+      .redactor_editor button.secondary:hover, .redactor_editor button.secondary:focus, .redactor_editor .button.secondary:hover, .redactor_editor .button.secondary:focus, .redactor_dropdown_box_styles button.secondary:hover, .redactor_dropdown_box_styles button.secondary:focus, .redactor_dropdown_box_styles .button.secondary:hover, .redactor_dropdown_box_styles .button.secondary:focus {
+        background-color: #ffd80d; }
+      .redactor_editor button.secondary:hover, .redactor_editor button.secondary:focus, .redactor_editor .button.secondary:hover, .redactor_editor .button.secondary:focus, .redactor_dropdown_box_styles button.secondary:hover, .redactor_dropdown_box_styles button.secondary:focus, .redactor_dropdown_box_styles .button.secondary:hover, .redactor_dropdown_box_styles .button.secondary:focus {
+        color: #FFFFFF; }
+    .redactor_editor button.success, .redactor_editor .button.success, .redactor_dropdown_box_styles button.success, .redactor_dropdown_box_styles .button.success {
+      background-color: #43AC6A;
+      border-color: #368a55;
+      color: #FFFFFF; }
+      .redactor_editor button.success:hover, .redactor_editor button.success:focus, .redactor_editor .button.success:hover, .redactor_editor .button.success:focus, .redactor_dropdown_box_styles button.success:hover, .redactor_dropdown_box_styles button.success:focus, .redactor_dropdown_box_styles .button.success:hover, .redactor_dropdown_box_styles .button.success:focus {
+        background-color: #368a55; }
+      .redactor_editor button.success:hover, .redactor_editor button.success:focus, .redactor_editor .button.success:hover, .redactor_editor .button.success:focus, .redactor_dropdown_box_styles button.success:hover, .redactor_dropdown_box_styles button.success:focus, .redactor_dropdown_box_styles .button.success:hover, .redactor_dropdown_box_styles .button.success:focus {
+        color: #FFFFFF; }
+    .redactor_editor button.alert, .redactor_editor .button.alert, .redactor_dropdown_box_styles button.alert, .redactor_dropdown_box_styles .button.alert {
+      background-color: #e00000;
+      border-color: #b30000;
+      color: #FFFFFF; }
+      .redactor_editor button.alert:hover, .redactor_editor button.alert:focus, .redactor_editor .button.alert:hover, .redactor_editor .button.alert:focus, .redactor_dropdown_box_styles button.alert:hover, .redactor_dropdown_box_styles button.alert:focus, .redactor_dropdown_box_styles .button.alert:hover, .redactor_dropdown_box_styles .button.alert:focus {
+        background-color: #b30000; }
+      .redactor_editor button.alert:hover, .redactor_editor button.alert:focus, .redactor_editor .button.alert:hover, .redactor_editor .button.alert:focus, .redactor_dropdown_box_styles button.alert:hover, .redactor_dropdown_box_styles button.alert:focus, .redactor_dropdown_box_styles .button.alert:hover, .redactor_dropdown_box_styles .button.alert:focus {
+        color: #FFFFFF; }
+    .redactor_editor button.warning, .redactor_editor .button.warning, .redactor_dropdown_box_styles button.warning, .redactor_dropdown_box_styles .button.warning {
+      background-color: #ffe350;
+      border-color: #ffd80d;
+      color: #FFFFFF; }
+      .redactor_editor button.warning:hover, .redactor_editor button.warning:focus, .redactor_editor .button.warning:hover, .redactor_editor .button.warning:focus, .redactor_dropdown_box_styles button.warning:hover, .redactor_dropdown_box_styles button.warning:focus, .redactor_dropdown_box_styles .button.warning:hover, .redactor_dropdown_box_styles .button.warning:focus {
+        background-color: #ffd80d; }
+      .redactor_editor button.warning:hover, .redactor_editor button.warning:focus, .redactor_editor .button.warning:hover, .redactor_editor .button.warning:focus, .redactor_dropdown_box_styles button.warning:hover, .redactor_dropdown_box_styles button.warning:focus, .redactor_dropdown_box_styles .button.warning:hover, .redactor_dropdown_box_styles .button.warning:focus {
+        color: #FFFFFF; }
+    .redactor_editor button.info, .redactor_editor .button.info, .redactor_dropdown_box_styles button.info, .redactor_dropdown_box_styles .button.info {
+      background-color: #a0d3e8;
+      border-color: #61b6d9;
+      color: #333333; }
+      .redactor_editor button.info:hover, .redactor_editor button.info:focus, .redactor_editor .button.info:hover, .redactor_editor .button.info:focus, .redactor_dropdown_box_styles button.info:hover, .redactor_dropdown_box_styles button.info:focus, .redactor_dropdown_box_styles .button.info:hover, .redactor_dropdown_box_styles .button.info:focus {
+        background-color: #61b6d9; }
+      .redactor_editor button.info:hover, .redactor_editor button.info:focus, .redactor_editor .button.info:hover, .redactor_editor .button.info:focus, .redactor_dropdown_box_styles button.info:hover, .redactor_dropdown_box_styles button.info:focus, .redactor_dropdown_box_styles .button.info:hover, .redactor_dropdown_box_styles .button.info:focus {
+        color: #FFFFFF; }
+    .redactor_editor button.large, .redactor_editor .button.large, .redactor_dropdown_box_styles button.large, .redactor_dropdown_box_styles .button.large {
+      padding-top: 1.125rem;
+      padding-right: 2.25rem;
+      padding-bottom: 1.1875rem;
+      padding-left: 2.25rem;
+      font-size: 1.25rem; }
+    .redactor_editor button.small, .redactor_editor .button.small, .redactor_dropdown_box_styles button.small, .redactor_dropdown_box_styles .button.small {
+      padding-top: 0.875rem;
+      padding-right: 1.75rem;
+      padding-bottom: 0.9375rem;
+      padding-left: 1.75rem;
+      font-size: 0.8125rem; }
+    .redactor_editor button.tiny, .redactor_editor .button.tiny, .redactor_dropdown_box_styles button.tiny, .redactor_dropdown_box_styles .button.tiny {
+      padding-top: 0.625rem;
+      padding-right: 1.25rem;
+      padding-bottom: 0.6875rem;
+      padding-left: 1.25rem;
+      font-size: 0.6875rem; }
+    .redactor_editor button.expand, .redactor_editor .button.expand, .redactor_dropdown_box_styles button.expand, .redactor_dropdown_box_styles .button.expand {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+    .redactor_editor button.left-align, .redactor_editor .button.left-align, .redactor_dropdown_box_styles button.left-align, .redactor_dropdown_box_styles .button.left-align {
+      text-align: left;
+      text-indent: 0.75rem; }
+    .redactor_editor button.right-align, .redactor_editor .button.right-align, .redactor_dropdown_box_styles button.right-align, .redactor_dropdown_box_styles .button.right-align {
+      text-align: right;
+      padding-right: 0.75rem; }
+    .redactor_editor button.radius, .redactor_editor .button.radius, .redactor_dropdown_box_styles button.radius, .redactor_dropdown_box_styles .button.radius {
+      border-radius: 0.3125rem; }
+    .redactor_editor button.round, .redactor_editor .button.round, .redactor_dropdown_box_styles button.round, .redactor_dropdown_box_styles .button.round {
+      border-radius: 1000px; }
+    .redactor_editor button.disabled, .redactor_editor button[disabled], .redactor_editor .button.disabled, .redactor_editor .button[disabled], .redactor_dropdown_box_styles button.disabled, .redactor_dropdown_box_styles button[disabled], .redactor_dropdown_box_styles .button.disabled, .redactor_dropdown_box_styles .button[disabled] {
+      background-color: #009fe3;
+      border-color: #007fb6;
+      color: #FFFFFF;
+      cursor: default;
+      opacity: 0.7;
+      box-shadow: none; }
+      .redactor_editor button.disabled:hover, .redactor_editor button.disabled:focus, .redactor_editor button[disabled]:hover, .redactor_editor button[disabled]:focus, .redactor_editor .button.disabled:hover, .redactor_editor .button.disabled:focus, .redactor_editor .button[disabled]:hover, .redactor_editor .button[disabled]:focus, .redactor_dropdown_box_styles button.disabled:hover, .redactor_dropdown_box_styles button.disabled:focus, .redactor_dropdown_box_styles button[disabled]:hover, .redactor_dropdown_box_styles button[disabled]:focus, .redactor_dropdown_box_styles .button.disabled:hover, .redactor_dropdown_box_styles .button.disabled:focus, .redactor_dropdown_box_styles .button[disabled]:hover, .redactor_dropdown_box_styles .button[disabled]:focus {
+        background-color: #007fb6; }
+      .redactor_editor button.disabled:hover, .redactor_editor button.disabled:focus, .redactor_editor button[disabled]:hover, .redactor_editor button[disabled]:focus, .redactor_editor .button.disabled:hover, .redactor_editor .button.disabled:focus, .redactor_editor .button[disabled]:hover, .redactor_editor .button[disabled]:focus, .redactor_dropdown_box_styles button.disabled:hover, .redactor_dropdown_box_styles button.disabled:focus, .redactor_dropdown_box_styles button[disabled]:hover, .redactor_dropdown_box_styles button[disabled]:focus, .redactor_dropdown_box_styles .button.disabled:hover, .redactor_dropdown_box_styles .button.disabled:focus, .redactor_dropdown_box_styles .button[disabled]:hover, .redactor_dropdown_box_styles .button[disabled]:focus {
+        color: #FFFFFF; }
+      .redactor_editor button.disabled:hover, .redactor_editor button.disabled:focus, .redactor_editor button[disabled]:hover, .redactor_editor button[disabled]:focus, .redactor_editor .button.disabled:hover, .redactor_editor .button.disabled:focus, .redactor_editor .button[disabled]:hover, .redactor_editor .button[disabled]:focus, .redactor_dropdown_box_styles button.disabled:hover, .redactor_dropdown_box_styles button.disabled:focus, .redactor_dropdown_box_styles button[disabled]:hover, .redactor_dropdown_box_styles button[disabled]:focus, .redactor_dropdown_box_styles .button.disabled:hover, .redactor_dropdown_box_styles .button.disabled:focus, .redactor_dropdown_box_styles .button[disabled]:hover, .redactor_dropdown_box_styles .button[disabled]:focus {
+        background-color: #009fe3; }
+      .redactor_editor button.disabled.secondary, .redactor_editor button[disabled].secondary, .redactor_editor .button.disabled.secondary, .redactor_editor .button[disabled].secondary, .redactor_dropdown_box_styles button.disabled.secondary, .redactor_dropdown_box_styles button[disabled].secondary, .redactor_dropdown_box_styles .button.disabled.secondary, .redactor_dropdown_box_styles .button[disabled].secondary {
+        background-color: #ffe350;
+        border-color: #ffd80d;
+        color: #FFFFFF;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none; }
+        .redactor_editor button.disabled.secondary:hover, .redactor_editor button.disabled.secondary:focus, .redactor_editor button[disabled].secondary:hover, .redactor_editor button[disabled].secondary:focus, .redactor_editor .button.disabled.secondary:hover, .redactor_editor .button.disabled.secondary:focus, .redactor_editor .button[disabled].secondary:hover, .redactor_editor .button[disabled].secondary:focus, .redactor_dropdown_box_styles button.disabled.secondary:hover, .redactor_dropdown_box_styles button.disabled.secondary:focus, .redactor_dropdown_box_styles button[disabled].secondary:hover, .redactor_dropdown_box_styles button[disabled].secondary:focus, .redactor_dropdown_box_styles .button.disabled.secondary:hover, .redactor_dropdown_box_styles .button.disabled.secondary:focus, .redactor_dropdown_box_styles .button[disabled].secondary:hover, .redactor_dropdown_box_styles .button[disabled].secondary:focus {
+          background-color: #ffd80d; }
+        .redactor_editor button.disabled.secondary:hover, .redactor_editor button.disabled.secondary:focus, .redactor_editor button[disabled].secondary:hover, .redactor_editor button[disabled].secondary:focus, .redactor_editor .button.disabled.secondary:hover, .redactor_editor .button.disabled.secondary:focus, .redactor_editor .button[disabled].secondary:hover, .redactor_editor .button[disabled].secondary:focus, .redactor_dropdown_box_styles button.disabled.secondary:hover, .redactor_dropdown_box_styles button.disabled.secondary:focus, .redactor_dropdown_box_styles button[disabled].secondary:hover, .redactor_dropdown_box_styles button[disabled].secondary:focus, .redactor_dropdown_box_styles .button.disabled.secondary:hover, .redactor_dropdown_box_styles .button.disabled.secondary:focus, .redactor_dropdown_box_styles .button[disabled].secondary:hover, .redactor_dropdown_box_styles .button[disabled].secondary:focus {
+          color: #FFFFFF; }
+        .redactor_editor button.disabled.secondary:hover, .redactor_editor button.disabled.secondary:focus, .redactor_editor button[disabled].secondary:hover, .redactor_editor button[disabled].secondary:focus, .redactor_editor .button.disabled.secondary:hover, .redactor_editor .button.disabled.secondary:focus, .redactor_editor .button[disabled].secondary:hover, .redactor_editor .button[disabled].secondary:focus, .redactor_dropdown_box_styles button.disabled.secondary:hover, .redactor_dropdown_box_styles button.disabled.secondary:focus, .redactor_dropdown_box_styles button[disabled].secondary:hover, .redactor_dropdown_box_styles button[disabled].secondary:focus, .redactor_dropdown_box_styles .button.disabled.secondary:hover, .redactor_dropdown_box_styles .button.disabled.secondary:focus, .redactor_dropdown_box_styles .button[disabled].secondary:hover, .redactor_dropdown_box_styles .button[disabled].secondary:focus {
+          background-color: #ffe350; }
+      .redactor_editor button.disabled.success, .redactor_editor button[disabled].success, .redactor_editor .button.disabled.success, .redactor_editor .button[disabled].success, .redactor_dropdown_box_styles button.disabled.success, .redactor_dropdown_box_styles button[disabled].success, .redactor_dropdown_box_styles .button.disabled.success, .redactor_dropdown_box_styles .button[disabled].success {
+        background-color: #43AC6A;
+        border-color: #368a55;
+        color: #FFFFFF;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none; }
+        .redactor_editor button.disabled.success:hover, .redactor_editor button.disabled.success:focus, .redactor_editor button[disabled].success:hover, .redactor_editor button[disabled].success:focus, .redactor_editor .button.disabled.success:hover, .redactor_editor .button.disabled.success:focus, .redactor_editor .button[disabled].success:hover, .redactor_editor .button[disabled].success:focus, .redactor_dropdown_box_styles button.disabled.success:hover, .redactor_dropdown_box_styles button.disabled.success:focus, .redactor_dropdown_box_styles button[disabled].success:hover, .redactor_dropdown_box_styles button[disabled].success:focus, .redactor_dropdown_box_styles .button.disabled.success:hover, .redactor_dropdown_box_styles .button.disabled.success:focus, .redactor_dropdown_box_styles .button[disabled].success:hover, .redactor_dropdown_box_styles .button[disabled].success:focus {
+          background-color: #368a55; }
+        .redactor_editor button.disabled.success:hover, .redactor_editor button.disabled.success:focus, .redactor_editor button[disabled].success:hover, .redactor_editor button[disabled].success:focus, .redactor_editor .button.disabled.success:hover, .redactor_editor .button.disabled.success:focus, .redactor_editor .button[disabled].success:hover, .redactor_editor .button[disabled].success:focus, .redactor_dropdown_box_styles button.disabled.success:hover, .redactor_dropdown_box_styles button.disabled.success:focus, .redactor_dropdown_box_styles button[disabled].success:hover, .redactor_dropdown_box_styles button[disabled].success:focus, .redactor_dropdown_box_styles .button.disabled.success:hover, .redactor_dropdown_box_styles .button.disabled.success:focus, .redactor_dropdown_box_styles .button[disabled].success:hover, .redactor_dropdown_box_styles .button[disabled].success:focus {
+          color: #FFFFFF; }
+        .redactor_editor button.disabled.success:hover, .redactor_editor button.disabled.success:focus, .redactor_editor button[disabled].success:hover, .redactor_editor button[disabled].success:focus, .redactor_editor .button.disabled.success:hover, .redactor_editor .button.disabled.success:focus, .redactor_editor .button[disabled].success:hover, .redactor_editor .button[disabled].success:focus, .redactor_dropdown_box_styles button.disabled.success:hover, .redactor_dropdown_box_styles button.disabled.success:focus, .redactor_dropdown_box_styles button[disabled].success:hover, .redactor_dropdown_box_styles button[disabled].success:focus, .redactor_dropdown_box_styles .button.disabled.success:hover, .redactor_dropdown_box_styles .button.disabled.success:focus, .redactor_dropdown_box_styles .button[disabled].success:hover, .redactor_dropdown_box_styles .button[disabled].success:focus {
+          background-color: #43AC6A; }
+      .redactor_editor button.disabled.alert, .redactor_editor button[disabled].alert, .redactor_editor .button.disabled.alert, .redactor_editor .button[disabled].alert, .redactor_dropdown_box_styles button.disabled.alert, .redactor_dropdown_box_styles button[disabled].alert, .redactor_dropdown_box_styles .button.disabled.alert, .redactor_dropdown_box_styles .button[disabled].alert {
+        background-color: #e00000;
+        border-color: #b30000;
+        color: #FFFFFF;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none; }
+        .redactor_editor button.disabled.alert:hover, .redactor_editor button.disabled.alert:focus, .redactor_editor button[disabled].alert:hover, .redactor_editor button[disabled].alert:focus, .redactor_editor .button.disabled.alert:hover, .redactor_editor .button.disabled.alert:focus, .redactor_editor .button[disabled].alert:hover, .redactor_editor .button[disabled].alert:focus, .redactor_dropdown_box_styles button.disabled.alert:hover, .redactor_dropdown_box_styles button.disabled.alert:focus, .redactor_dropdown_box_styles button[disabled].alert:hover, .redactor_dropdown_box_styles button[disabled].alert:focus, .redactor_dropdown_box_styles .button.disabled.alert:hover, .redactor_dropdown_box_styles .button.disabled.alert:focus, .redactor_dropdown_box_styles .button[disabled].alert:hover, .redactor_dropdown_box_styles .button[disabled].alert:focus {
+          background-color: #b30000; }
+        .redactor_editor button.disabled.alert:hover, .redactor_editor button.disabled.alert:focus, .redactor_editor button[disabled].alert:hover, .redactor_editor button[disabled].alert:focus, .redactor_editor .button.disabled.alert:hover, .redactor_editor .button.disabled.alert:focus, .redactor_editor .button[disabled].alert:hover, .redactor_editor .button[disabled].alert:focus, .redactor_dropdown_box_styles button.disabled.alert:hover, .redactor_dropdown_box_styles button.disabled.alert:focus, .redactor_dropdown_box_styles button[disabled].alert:hover, .redactor_dropdown_box_styles button[disabled].alert:focus, .redactor_dropdown_box_styles .button.disabled.alert:hover, .redactor_dropdown_box_styles .button.disabled.alert:focus, .redactor_dropdown_box_styles .button[disabled].alert:hover, .redactor_dropdown_box_styles .button[disabled].alert:focus {
+          color: #FFFFFF; }
+        .redactor_editor button.disabled.alert:hover, .redactor_editor button.disabled.alert:focus, .redactor_editor button[disabled].alert:hover, .redactor_editor button[disabled].alert:focus, .redactor_editor .button.disabled.alert:hover, .redactor_editor .button.disabled.alert:focus, .redactor_editor .button[disabled].alert:hover, .redactor_editor .button[disabled].alert:focus, .redactor_dropdown_box_styles button.disabled.alert:hover, .redactor_dropdown_box_styles button.disabled.alert:focus, .redactor_dropdown_box_styles button[disabled].alert:hover, .redactor_dropdown_box_styles button[disabled].alert:focus, .redactor_dropdown_box_styles .button.disabled.alert:hover, .redactor_dropdown_box_styles .button.disabled.alert:focus, .redactor_dropdown_box_styles .button[disabled].alert:hover, .redactor_dropdown_box_styles .button[disabled].alert:focus {
+          background-color: #e00000; }
+      .redactor_editor button.disabled.warning, .redactor_editor button[disabled].warning, .redactor_editor .button.disabled.warning, .redactor_editor .button[disabled].warning, .redactor_dropdown_box_styles button.disabled.warning, .redactor_dropdown_box_styles button[disabled].warning, .redactor_dropdown_box_styles .button.disabled.warning, .redactor_dropdown_box_styles .button[disabled].warning {
+        background-color: #ffe350;
+        border-color: #ffd80d;
+        color: #FFFFFF;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none; }
+        .redactor_editor button.disabled.warning:hover, .redactor_editor button.disabled.warning:focus, .redactor_editor button[disabled].warning:hover, .redactor_editor button[disabled].warning:focus, .redactor_editor .button.disabled.warning:hover, .redactor_editor .button.disabled.warning:focus, .redactor_editor .button[disabled].warning:hover, .redactor_editor .button[disabled].warning:focus, .redactor_dropdown_box_styles button.disabled.warning:hover, .redactor_dropdown_box_styles button.disabled.warning:focus, .redactor_dropdown_box_styles button[disabled].warning:hover, .redactor_dropdown_box_styles button[disabled].warning:focus, .redactor_dropdown_box_styles .button.disabled.warning:hover, .redactor_dropdown_box_styles .button.disabled.warning:focus, .redactor_dropdown_box_styles .button[disabled].warning:hover, .redactor_dropdown_box_styles .button[disabled].warning:focus {
+          background-color: #ffd80d; }
+        .redactor_editor button.disabled.warning:hover, .redactor_editor button.disabled.warning:focus, .redactor_editor button[disabled].warning:hover, .redactor_editor button[disabled].warning:focus, .redactor_editor .button.disabled.warning:hover, .redactor_editor .button.disabled.warning:focus, .redactor_editor .button[disabled].warning:hover, .redactor_editor .button[disabled].warning:focus, .redactor_dropdown_box_styles button.disabled.warning:hover, .redactor_dropdown_box_styles button.disabled.warning:focus, .redactor_dropdown_box_styles button[disabled].warning:hover, .redactor_dropdown_box_styles button[disabled].warning:focus, .redactor_dropdown_box_styles .button.disabled.warning:hover, .redactor_dropdown_box_styles .button.disabled.warning:focus, .redactor_dropdown_box_styles .button[disabled].warning:hover, .redactor_dropdown_box_styles .button[disabled].warning:focus {
+          color: #FFFFFF; }
+        .redactor_editor button.disabled.warning:hover, .redactor_editor button.disabled.warning:focus, .redactor_editor button[disabled].warning:hover, .redactor_editor button[disabled].warning:focus, .redactor_editor .button.disabled.warning:hover, .redactor_editor .button.disabled.warning:focus, .redactor_editor .button[disabled].warning:hover, .redactor_editor .button[disabled].warning:focus, .redactor_dropdown_box_styles button.disabled.warning:hover, .redactor_dropdown_box_styles button.disabled.warning:focus, .redactor_dropdown_box_styles button[disabled].warning:hover, .redactor_dropdown_box_styles button[disabled].warning:focus, .redactor_dropdown_box_styles .button.disabled.warning:hover, .redactor_dropdown_box_styles .button.disabled.warning:focus, .redactor_dropdown_box_styles .button[disabled].warning:hover, .redactor_dropdown_box_styles .button[disabled].warning:focus {
+          background-color: #ffe350; }
+      .redactor_editor button.disabled.info, .redactor_editor button[disabled].info, .redactor_editor .button.disabled.info, .redactor_editor .button[disabled].info, .redactor_dropdown_box_styles button.disabled.info, .redactor_dropdown_box_styles button[disabled].info, .redactor_dropdown_box_styles .button.disabled.info, .redactor_dropdown_box_styles .button[disabled].info {
+        background-color: #a0d3e8;
+        border-color: #61b6d9;
+        color: #333333;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none; }
+        .redactor_editor button.disabled.info:hover, .redactor_editor button.disabled.info:focus, .redactor_editor button[disabled].info:hover, .redactor_editor button[disabled].info:focus, .redactor_editor .button.disabled.info:hover, .redactor_editor .button.disabled.info:focus, .redactor_editor .button[disabled].info:hover, .redactor_editor .button[disabled].info:focus, .redactor_dropdown_box_styles button.disabled.info:hover, .redactor_dropdown_box_styles button.disabled.info:focus, .redactor_dropdown_box_styles button[disabled].info:hover, .redactor_dropdown_box_styles button[disabled].info:focus, .redactor_dropdown_box_styles .button.disabled.info:hover, .redactor_dropdown_box_styles .button.disabled.info:focus, .redactor_dropdown_box_styles .button[disabled].info:hover, .redactor_dropdown_box_styles .button[disabled].info:focus {
+          background-color: #61b6d9; }
+        .redactor_editor button.disabled.info:hover, .redactor_editor button.disabled.info:focus, .redactor_editor button[disabled].info:hover, .redactor_editor button[disabled].info:focus, .redactor_editor .button.disabled.info:hover, .redactor_editor .button.disabled.info:focus, .redactor_editor .button[disabled].info:hover, .redactor_editor .button[disabled].info:focus, .redactor_dropdown_box_styles button.disabled.info:hover, .redactor_dropdown_box_styles button.disabled.info:focus, .redactor_dropdown_box_styles button[disabled].info:hover, .redactor_dropdown_box_styles button[disabled].info:focus, .redactor_dropdown_box_styles .button.disabled.info:hover, .redactor_dropdown_box_styles .button.disabled.info:focus, .redactor_dropdown_box_styles .button[disabled].info:hover, .redactor_dropdown_box_styles .button[disabled].info:focus {
+          color: #FFFFFF; }
+        .redactor_editor button.disabled.info:hover, .redactor_editor button.disabled.info:focus, .redactor_editor button[disabled].info:hover, .redactor_editor button[disabled].info:focus, .redactor_editor .button.disabled.info:hover, .redactor_editor .button.disabled.info:focus, .redactor_editor .button[disabled].info:hover, .redactor_editor .button[disabled].info:focus, .redactor_dropdown_box_styles button.disabled.info:hover, .redactor_dropdown_box_styles button.disabled.info:focus, .redactor_dropdown_box_styles button[disabled].info:hover, .redactor_dropdown_box_styles button[disabled].info:focus, .redactor_dropdown_box_styles .button.disabled.info:hover, .redactor_dropdown_box_styles .button.disabled.info:focus, .redactor_dropdown_box_styles .button[disabled].info:hover, .redactor_dropdown_box_styles .button[disabled].info:focus {
+          background-color: #a0d3e8; }
+  .redactor_editor button::-moz-focus-inner, .redactor_dropdown_box_styles button::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  @media only screen and (min-width:48rem) {
+    .redactor_editor button, .redactor_editor .button, .redactor_dropdown_box_styles button, .redactor_dropdown_box_styles .button {
+      display: inline-block; } }
+  .redactor_editor .text-left, .redactor_dropdown_box_styles .text-left {
+    text-align: left !important; }
+  .redactor_editor .text-right, .redactor_dropdown_box_styles .text-right {
+    text-align: right !important; }
+  .redactor_editor .text-center, .redactor_dropdown_box_styles .text-center {
+    text-align: center !important; }
+  .redactor_editor .text-justify, .redactor_dropdown_box_styles .text-justify {
+    text-align: justify !important; }
+  @media only screen and (max-width: 47.9375rem) {
+    .redactor_editor .small-only-text-left, .redactor_dropdown_box_styles .small-only-text-left {
+      text-align: left !important; }
+    .redactor_editor .small-only-text-right, .redactor_dropdown_box_styles .small-only-text-right {
+      text-align: right !important; }
+    .redactor_editor .small-only-text-center, .redactor_dropdown_box_styles .small-only-text-center {
+      text-align: center !important; }
+    .redactor_editor .small-only-text-justify, .redactor_dropdown_box_styles .small-only-text-justify {
+      text-align: justify !important; } }
+  @media only screen {
+    .redactor_editor .small-text-left, .redactor_dropdown_box_styles .small-text-left {
+      text-align: left !important; }
+    .redactor_editor .small-text-right, .redactor_dropdown_box_styles .small-text-right {
+      text-align: right !important; }
+    .redactor_editor .small-text-center, .redactor_dropdown_box_styles .small-text-center {
+      text-align: center !important; }
+    .redactor_editor .small-text-justify, .redactor_dropdown_box_styles .small-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:48rem) and (max-width:63.9375rem) {
+    .redactor_editor .medium-only-text-left, .redactor_dropdown_box_styles .medium-only-text-left {
+      text-align: left !important; }
+    .redactor_editor .medium-only-text-right, .redactor_dropdown_box_styles .medium-only-text-right {
+      text-align: right !important; }
+    .redactor_editor .medium-only-text-center, .redactor_dropdown_box_styles .medium-only-text-center {
+      text-align: center !important; }
+    .redactor_editor .medium-only-text-justify, .redactor_dropdown_box_styles .medium-only-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:48rem) {
+    .redactor_editor .medium-text-left, .redactor_dropdown_box_styles .medium-text-left {
+      text-align: left !important; }
+    .redactor_editor .medium-text-right, .redactor_dropdown_box_styles .medium-text-right {
+      text-align: right !important; }
+    .redactor_editor .medium-text-center, .redactor_dropdown_box_styles .medium-text-center {
+      text-align: center !important; }
+    .redactor_editor .medium-text-justify, .redactor_dropdown_box_styles .medium-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:64rem) and (max-width:74.9375rem) {
+    .redactor_editor .large-only-text-left, .redactor_dropdown_box_styles .large-only-text-left {
+      text-align: left !important; }
+    .redactor_editor .large-only-text-right, .redactor_dropdown_box_styles .large-only-text-right {
+      text-align: right !important; }
+    .redactor_editor .large-only-text-center, .redactor_dropdown_box_styles .large-only-text-center {
+      text-align: center !important; }
+    .redactor_editor .large-only-text-justify, .redactor_dropdown_box_styles .large-only-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:64rem) {
+    .redactor_editor .large-text-left, .redactor_dropdown_box_styles .large-text-left {
+      text-align: left !important; }
+    .redactor_editor .large-text-right, .redactor_dropdown_box_styles .large-text-right {
+      text-align: right !important; }
+    .redactor_editor .large-text-center, .redactor_dropdown_box_styles .large-text-center {
+      text-align: center !important; }
+    .redactor_editor .large-text-justify, .redactor_dropdown_box_styles .large-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:75rem) and (max-width:79rem) {
+    .redactor_editor .xlarge-only-text-left, .redactor_dropdown_box_styles .xlarge-only-text-left {
+      text-align: left !important; }
+    .redactor_editor .xlarge-only-text-right, .redactor_dropdown_box_styles .xlarge-only-text-right {
+      text-align: right !important; }
+    .redactor_editor .xlarge-only-text-center, .redactor_dropdown_box_styles .xlarge-only-text-center {
+      text-align: center !important; }
+    .redactor_editor .xlarge-only-text-justify, .redactor_dropdown_box_styles .xlarge-only-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:75rem) {
+    .redactor_editor .xlarge-text-left, .redactor_dropdown_box_styles .xlarge-text-left {
+      text-align: left !important; }
+    .redactor_editor .xlarge-text-right, .redactor_dropdown_box_styles .xlarge-text-right {
+      text-align: right !important; }
+    .redactor_editor .xlarge-text-center, .redactor_dropdown_box_styles .xlarge-text-center {
+      text-align: center !important; }
+    .redactor_editor .xlarge-text-justify, .redactor_dropdown_box_styles .xlarge-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:79.0625rem) and (max-width:99999999rem) {
+    .redactor_editor .xxlarge-only-text-left, .redactor_dropdown_box_styles .xxlarge-only-text-left {
+      text-align: left !important; }
+    .redactor_editor .xxlarge-only-text-right, .redactor_dropdown_box_styles .xxlarge-only-text-right {
+      text-align: right !important; }
+    .redactor_editor .xxlarge-only-text-center, .redactor_dropdown_box_styles .xxlarge-only-text-center {
+      text-align: center !important; }
+    .redactor_editor .xxlarge-only-text-justify, .redactor_dropdown_box_styles .xxlarge-only-text-justify {
+      text-align: justify !important; } }
+  @media only screen and (min-width:79.0625rem) {
+    .redactor_editor .xxlarge-text-left, .redactor_dropdown_box_styles .xxlarge-text-left {
+      text-align: left !important; }
+    .redactor_editor .xxlarge-text-right, .redactor_dropdown_box_styles .xxlarge-text-right {
+      text-align: right !important; }
+    .redactor_editor .xxlarge-text-center, .redactor_dropdown_box_styles .xxlarge-text-center {
+      text-align: center !important; }
+    .redactor_editor .xxlarge-text-justify, .redactor_dropdown_box_styles .xxlarge-text-justify {
+      text-align: justify !important; } }
+  .redactor_editor div, .redactor_editor dl, .redactor_editor dt, .redactor_editor dd, .redactor_editor ul, .redactor_editor ol, .redactor_editor li, .redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5, .redactor_editor h6, .redactor_editor pre, .redactor_editor form, .redactor_editor p, .redactor_editor blockquote, .redactor_editor th, .redactor_editor td, .redactor_dropdown_box_styles div, .redactor_dropdown_box_styles dl, .redactor_dropdown_box_styles dt, .redactor_dropdown_box_styles dd, .redactor_dropdown_box_styles ul, .redactor_dropdown_box_styles ol, .redactor_dropdown_box_styles li, .redactor_dropdown_box_styles h1, .redactor_dropdown_box_styles h2, .redactor_dropdown_box_styles h3, .redactor_dropdown_box_styles h4, .redactor_dropdown_box_styles h5, .redactor_dropdown_box_styles h6, .redactor_dropdown_box_styles pre, .redactor_dropdown_box_styles form, .redactor_dropdown_box_styles p, .redactor_dropdown_box_styles blockquote, .redactor_dropdown_box_styles th, .redactor_dropdown_box_styles td {
+    margin: 0;
+    padding: 0; }
+  .redactor_editor a, .redactor_dropdown_box_styles a {
+    color: #009fe3;
+    text-decoration: none;
+    line-height: inherit; }
+    .redactor_editor a:hover, .redactor_editor a:focus, .redactor_dropdown_box_styles a:hover, .redactor_dropdown_box_styles a:focus {
+      color: #0089c3; }
+    .redactor_editor a img, .redactor_dropdown_box_styles a img {
+      border: none; }
+  .redactor_editor p, .redactor_dropdown_box_styles p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.66667;
+    margin-bottom: 1.625rem;
+    text-rendering: optimizeLegibility; }
+    .redactor_editor p.lead, .redactor_dropdown_box_styles p.lead {
+      font-size: 1.15625rem;
+      line-height: 1.6; }
+    .redactor_editor p aside, .redactor_dropdown_box_styles p aside {
+      font-size: 0.9375rem;
+      line-height: 1.66667;
+      font-style: normal; }
+  .redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5, .redactor_editor h6, .redactor_dropdown_box_styles h1, .redactor_dropdown_box_styles h2, .redactor_dropdown_box_styles h3, .redactor_dropdown_box_styles h4, .redactor_dropdown_box_styles h5, .redactor_dropdown_box_styles h6 {
+    font-family: "open_sans", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #009fe3;
+    text-rendering: optimizeLegibility;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2; }
+    .redactor_editor h1 small, .redactor_editor h2 small, .redactor_editor h3 small, .redactor_editor h4 small, .redactor_editor h5 small, .redactor_editor h6 small, .redactor_dropdown_box_styles h1 small, .redactor_dropdown_box_styles h2 small, .redactor_dropdown_box_styles h3 small, .redactor_dropdown_box_styles h4 small, .redactor_dropdown_box_styles h5 small, .redactor_dropdown_box_styles h6 small {
+      font-size: 80%;
+      color: #a7a7a7;
+      line-height: 0; }
+  .redactor_editor h1, .redactor_dropdown_box_styles h1 {
+    font-size: 1.3125rem; }
+  .redactor_editor h2, .redactor_dropdown_box_styles h2 {
+    font-size: 1.375rem; }
+  .redactor_editor h3, .redactor_dropdown_box_styles h3 {
+    font-size: 1.25rem; }
+  .redactor_editor h4, .redactor_dropdown_box_styles h4 {
+    font-size: 1.125rem; }
+  .redactor_editor h5, .redactor_dropdown_box_styles h5 {
+    font-size: 1rem; }
+  .redactor_editor h6, .redactor_dropdown_box_styles h6 {
+    font-size: 1rem; }
+  .redactor_editor .subheader, .redactor_dropdown_box_styles .subheader {
+    line-height: 1.4;
+    color: #47c8ff;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem; }
+  .redactor_editor hr, .redactor_dropdown_box_styles hr {
+    border: solid #a7a7a7;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0; }
+  .redactor_editor em, .redactor_editor i, .redactor_dropdown_box_styles em, .redactor_dropdown_box_styles i {
+    font-style: italic;
+    line-height: inherit; }
+  .redactor_editor strong, .redactor_editor b, .redactor_dropdown_box_styles strong, .redactor_dropdown_box_styles b {
+    font-weight: 700;
+    line-height: inherit; }
+  .redactor_editor small, .redactor_dropdown_box_styles small {
+    font-size: 80%;
+    line-height: inherit; }
+  .redactor_editor code, .redactor_dropdown_box_styles code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-weight: 400;
+    color: #333333;
+    background-color: #fff7ca;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffef9d;
+    padding: 0.125rem 0.3125rem 0.0625rem; }
+  .redactor_editor ul, .redactor_editor ol, .redactor_editor dl, .redactor_dropdown_box_styles ul, .redactor_dropdown_box_styles ol, .redactor_dropdown_box_styles dl {
+    font-size: 0.9375rem;
+    line-height: 1.66667;
+    margin-bottom: 1.625rem;
+    list-style-position: outside;
+    font-family: inherit; }
+  .redactor_editor ul, .redactor_dropdown_box_styles ul {
+    margin-left: 1.1rem; }
+    .redactor_editor ul.no-bullet, .redactor_dropdown_box_styles ul.no-bullet {
+      margin-left: 0; }
+      .redactor_editor ul.no-bullet li ul, .redactor_editor ul.no-bullet li ol, .redactor_dropdown_box_styles ul.no-bullet li ul, .redactor_dropdown_box_styles ul.no-bullet li ol {
+        margin-left: 1.25rem;
+        margin-bottom: 0;
+        list-style: none; }
+  .redactor_editor ul li ul, .redactor_editor ul li ol, .redactor_dropdown_box_styles ul li ul, .redactor_dropdown_box_styles ul li ol {
+    margin-left: 1.25rem;
+    margin-bottom: 0; }
+  .redactor_editor ul.square li ul, .redactor_editor ul.circle li ul, .redactor_editor ul.disc li ul, .redactor_dropdown_box_styles ul.square li ul, .redactor_dropdown_box_styles ul.circle li ul, .redactor_dropdown_box_styles ul.disc li ul {
+    list-style: inherit; }
+  .redactor_editor ul.square, .redactor_dropdown_box_styles ul.square {
+    list-style-type: square;
+    margin-left: 1.1rem; }
+  .redactor_editor ul.circle, .redactor_dropdown_box_styles ul.circle {
+    list-style-type: circle;
+    margin-left: 1.1rem; }
+  .redactor_editor ul.disc, .redactor_dropdown_box_styles ul.disc {
+    list-style-type: disc;
+    margin-left: 1.1rem; }
+  .redactor_editor ul.no-bullet, .redactor_dropdown_box_styles ul.no-bullet {
+    list-style: none; }
+  .redactor_editor ol, .redactor_dropdown_box_styles ol {
+    margin-left: 1.4rem; }
+    .redactor_editor ol li ul, .redactor_editor ol li ol, .redactor_dropdown_box_styles ol li ul, .redactor_dropdown_box_styles ol li ol {
+      margin-left: 1.25rem;
+      margin-bottom: 0; }
+  .redactor_editor dl dt, .redactor_dropdown_box_styles dl dt {
+    margin-bottom: 0.3rem;
+    font-weight: 700; }
+  .redactor_editor dl dd, .redactor_dropdown_box_styles dl dd {
+    margin-bottom: 0.75rem; }
+  .redactor_editor abbr, .redactor_editor acronym, .redactor_dropdown_box_styles abbr, .redactor_dropdown_box_styles acronym {
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #333;
+    cursor: help; }
+  .redactor_editor abbr, .redactor_dropdown_box_styles abbr {
+    text-transform: none; }
+    .redactor_editor abbr[title], .redactor_dropdown_box_styles abbr[title] {
+      border-bottom: 1px dotted #DDDDDD; }
+  .redactor_editor blockquote, .redactor_dropdown_box_styles blockquote {
+    margin: 0 0 1.625rem;
+    padding: 0.5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #DDDDDD; }
+    .redactor_editor blockquote cite, .redactor_dropdown_box_styles blockquote cite {
+      display: block;
+      font-size: 0.8125rem;
+      color: #25beff; }
+      .redactor_editor blockquote cite:before, .redactor_dropdown_box_styles blockquote cite:before {
+        content: "\2014 \0020"; }
+      .redactor_editor blockquote cite a, .redactor_editor blockquote cite a:visited, .redactor_dropdown_box_styles blockquote cite a, .redactor_dropdown_box_styles blockquote cite a:visited {
+        color: #25beff; }
+  .redactor_editor blockquote, .redactor_editor blockquote p, .redactor_dropdown_box_styles blockquote, .redactor_dropdown_box_styles blockquote p {
+    line-height: 1.66667;
+    color: #47c8ff; }
+  .redactor_editor .vcard, .redactor_dropdown_box_styles .vcard {
+    display: inline-block;
+    margin: 0 0 1.25rem 0;
+    border: 1px solid #DDDDDD;
+    padding: 0.625rem 0.75rem; }
+    .redactor_editor .vcard li, .redactor_dropdown_box_styles .vcard li {
+      margin: 0;
+      display: block; }
+    .redactor_editor .vcard .fn, .redactor_dropdown_box_styles .vcard .fn {
+      font-weight: 700;
+      font-size: 0.9375rem; }
+  .redactor_editor .vevent .summary, .redactor_dropdown_box_styles .vevent .summary {
+    font-weight: 700; }
+  .redactor_editor .vevent abbr, .redactor_dropdown_box_styles .vevent abbr {
+    cursor: default;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 0 0.0625rem; }
+  @media only screen and (min-width:48rem) {
+    .redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5, .redactor_editor h6, .redactor_dropdown_box_styles h1, .redactor_dropdown_box_styles h2, .redactor_dropdown_box_styles h3, .redactor_dropdown_box_styles h4, .redactor_dropdown_box_styles h5, .redactor_dropdown_box_styles h6 {
+      line-height: 1.2; }
+    .redactor_editor h1, .redactor_dropdown_box_styles h1 {
+      font-size: 2.0625rem; }
+    .redactor_editor h2, .redactor_dropdown_box_styles h2 {
+      font-size: 2rem; }
+    .redactor_editor h3, .redactor_dropdown_box_styles h3 {
+      font-size: 1.75rem; }
+    .redactor_editor h4, .redactor_dropdown_box_styles h4 {
+      font-size: 1.5rem; }
+    .redactor_editor h5, .redactor_dropdown_box_styles h5 {
+      font-size: 1.125rem; }
+    .redactor_editor h6, .redactor_dropdown_box_styles h6 {
+      font-size: 1rem; } }
+  .redactor_editor .no-margin, .redactor_dropdown_box_styles .no-margin {
+    margin: 0 !important; }
+  .redactor_editor .no-margin-top, .redactor_dropdown_box_styles .no-margin-top {
+    margin-top: 0 !important; }
+  .redactor_editor .no-margin-bottom, .redactor_dropdown_box_styles .no-margin-bottom {
+    margin-bottom: 0 !important; }
+  .redactor_editor .no-padding, .redactor_dropdown_box_styles .no-padding {
+    padding: 0 !important; }
+  .redactor_editor .extra-small-padding-bottom, .redactor_dropdown_box_styles .extra-small-padding-bottom {
+    padding-bottom: 2rem !important; }
+  .redactor_editor .extra-padding-bottom, .redactor_dropdown_box_styles .extra-padding-bottom {
+    padding-bottom: 3rem !important; }
+  .redactor_editor .extra-large-padding-bottom, .redactor_dropdown_box_styles .extra-large-padding-bottom {
+    padding-bottom: 4.5rem !important; }
+  .redactor_editor .extra-small-padding-top, .redactor_dropdown_box_styles .extra-small-padding-top {
+    padding-top: 2rem; }
+  .redactor_editor .extra-padding-top, .redactor_dropdown_box_styles .extra-padding-top {
+    padding-top: 3rem !important; }
+  .redactor_editor .extra-large-padding-top, .redactor_dropdown_box_styles .extra-large-padding-top {
+    padding-top: 4.5rem !important; }
+  .redactor_editor .hide-element, .redactor_dropdown_box_styles .hide-element {
+    display: none; }
+  .redactor_editor .fullwidth, .redactor_dropdown_box_styles .fullwidth {
+    display: block;
+    width: 100%;
+    max-width: none; }
+  .redactor_editor iframe, .redactor_dropdown_box_styles iframe {
+    max-width: 100%; }
+  .redactor_editor table, .redactor_dropdown_box_styles table {
+    width: 100%; }
+  .redactor_editor .primary-bg, .redactor_dropdown_box_styles .primary-bg {
+    background-color: #009fe3 !important; }
+  .redactor_editor .secondary-bg, .redactor_dropdown_box_styles .secondary-bg {
+    background-color: #009fe3 !important; }
+  .redactor_editor .gray-bg, .redactor_dropdown_box_styles .gray-bg {
+    background-color: #a7a7a7 !important; }
+  .redactor_editor .white-bg, .redactor_dropdown_box_styles .white-bg {
+    background-color: #fff !important; }
+  .redactor_editor html.no-js .show-with-js, .redactor_dropdown_box_styles html.no-js .show-with-js {
+    display: none !important; }
+  .redactor_editor html.js .hide-with-js, .redactor_dropdown_box_styles html.js .hide-with-js {
+    display: none !important; }
+  .redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5, .redactor_editor h6, .redactor_dropdown_box_styles h1, .redactor_dropdown_box_styles h2, .redactor_dropdown_box_styles h3, .redactor_dropdown_box_styles h4, .redactor_dropdown_box_styles h5, .redactor_dropdown_box_styles h6 {
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "kern" 1;
+       -moz-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    -webkit-font-kerning: normal;
+       -moz-font-kerning: normal;
+            font-kerning: normal; }
+    .redactor_editor h1.small-margin-top, .redactor_editor h2.small-margin-top, .redactor_editor h3.small-margin-top, .redactor_editor h4.small-margin-top, .redactor_editor h5.small-margin-top, .redactor_editor h6.small-margin-top, .redactor_dropdown_box_styles h1.small-margin-top, .redactor_dropdown_box_styles h2.small-margin-top, .redactor_dropdown_box_styles h3.small-margin-top, .redactor_dropdown_box_styles h4.small-margin-top, .redactor_dropdown_box_styles h5.small-margin-top, .redactor_dropdown_box_styles h6.small-margin-top {
+      margin-top: 1rem; }
+    .redactor_editor h1 strong, .redactor_editor h2 strong, .redactor_editor h3 strong, .redactor_editor h4 strong, .redactor_editor h5 strong, .redactor_editor h6 strong, .redactor_dropdown_box_styles h1 strong, .redactor_dropdown_box_styles h2 strong, .redactor_dropdown_box_styles h3 strong, .redactor_dropdown_box_styles h4 strong, .redactor_dropdown_box_styles h5 strong, .redactor_dropdown_box_styles h6 strong {
+      font-weight: 800; }
+  .redactor_editor h1, .redactor_dropdown_box_styles h1 {
+    margin-bottom: 1.5rem; }
+  .redactor_editor p, .redactor_dropdown_box_styles p {
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "kern" 1;
+       -moz-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    -webkit-font-kerning: normal;
+       -moz-font-kerning: normal;
+            font-kerning: normal; }
+  .redactor_editor a, .redactor_dropdown_box_styles a {
+    -webkit-tap-highlight-color: transparent;
+    transition: color .15s ease-in-out;
+    font-weight: 700; }
+    .redactor_editor a:hover, .redactor_editor a:focus, .redactor_dropdown_box_styles a:hover, .redactor_dropdown_box_styles a:focus {
+      outline: none; }
+    .redactor_editor a::-moz-focus-inner, .redactor_dropdown_box_styles a::-moz-focus-inner {
+      border: 0 !important; }
+  .redactor_editor small, .redactor_dropdown_box_styles small {
+    color: #a7a7a7; }
+    .redactor_editor small a, .redactor_dropdown_box_styles small a {
+      color: #8e8e8e; }
+  .redactor_editor .introtext, .redactor_dropdown_box_styles .introtext {
+    font-weight: 700; }
+  .redactor_editor .large-font, .redactor_dropdown_box_styles .large-font {
+    font-size: 1.25rem; }
+    @media only screen and (min-width:48rem) {
+      .redactor_editor .large-font, .redactor_dropdown_box_styles .large-font {
+        font-size: 1.625rem; } }
+  .redactor_editor .xlarge-font, .redactor_dropdown_box_styles .xlarge-font {
+    font-size: 1.625rem; }
+    @media only screen and (min-width:48rem) {
+      .redactor_editor .xlarge-font, .redactor_dropdown_box_styles .xlarge-font {
+        font-size: 2.5rem; } }
+  .redactor_editor hr, .redactor_dropdown_box_styles hr {
+    margin: 2.5rem 0 3rem; }
+  .redactor_editor .weight-normal, .redactor_dropdown_box_styles .weight-normal {
+    font-weight: 400 !important; }
+  .redactor_editor .weight-bold, .redactor_dropdown_box_styles .weight-bold {
+    font-weight: 700 !important; }
+  .redactor_editor .weight-extrabold, .redactor_dropdown_box_styles .weight-extrabold {
+    font-weight: 800 !important; }
+  .redactor_editor .primarytext, .redactor_dropdown_box_styles .primarytext {
+    color: #009fe3 !important; }
+  .redactor_editor .secondarytext, .redactor_dropdown_box_styles .secondarytext {
+    color: #ffe350 !important; }
+  .redactor_editor .graytext, .redactor_dropdown_box_styles .graytext {
+    color: #a7a7a7 !important; }
+  .redactor_editor .bodytext, .redactor_dropdown_box_styles .bodytext {
+    color: #333 !important; }
+  .redactor_editor .whitetext, .redactor_dropdown_box_styles .whitetext {
+    color: #fff !important; }
+  .redactor_editor .bluetext, .redactor_dropdown_box_styles .bluetext {
+    color: #009fe3 !important; }
+  .redactor_editor .darkbluetext, .redactor_dropdown_box_styles .darkbluetext {
+    color: #00487f !important; }
+  .redactor_editor .yellowtext, .redactor_dropdown_box_styles .yellowtext {
+    color: #ffe350 !important; }
+  .redactor_editor .redtext, .redactor_dropdown_box_styles .redtext {
+    color: #e00000 !important; }
+  .redactor_editor .greentext, .redactor_dropdown_box_styles .greentext {
+    color: #43AC6A !important; }
+
+.redactor_editor *, .redactor_editor p, .redactor_editor div, .redactor_editor ul, .redactor_editor ol, .redactor_editor table, .redactor_editor dl, .redactor_editor blockquote, .redactor_editor pre, .redactor_editor span, .redactor_dropdown_box_styles *, .redactor_dropdown_box_styles p, .redactor_dropdown_box_styles div, .redactor_dropdown_box_styles ul, .redactor_dropdown_box_styles ol, .redactor_dropdown_box_styles table, .redactor_dropdown_box_styles dl, .redactor_dropdown_box_styles blockquote, .redactor_dropdown_box_styles pre, .redactor_dropdown_box_styles span {
+  font-family: "open_sans", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+  color: #333; }
+.redactor_editor h1, .redactor_editor h2, .redactor_editor h3, .redactor_editor h4, .redactor_editor h5, .redactor_editor h6, .redactor_dropdown_box_styles h1, .redactor_dropdown_box_styles h2, .redactor_dropdown_box_styles h3, .redactor_dropdown_box_styles h4, .redactor_dropdown_box_styles h5, .redactor_dropdown_box_styles h6 {
+  font-family: "open_sans", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important; }
+
+.redactor_dropdown_box_styles a {
+  font-weight: normal;
+  color: #222; }
+.redactor_dropdown_box_styles .large-font {
+  font-size: 15px; }
+.redactor_dropdown_box_styles .xxlarge-font {
+  font-size: 17px; }
+.redactor_dropdown_box_styles .whitetext {
+  background: #ddd; }
+.redactor_dropdown_box_styles .redactor_dropdown_remove {
+  margin: 5px -10px -10px -10px;
+  padding: 5px 15px;
+  background: red;
+  color: #fff;
+  font-weight: bold; }
+/*# sourceMappingURL=redactor.css.map */
