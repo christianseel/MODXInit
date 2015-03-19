@@ -5,7 +5,7 @@
  */
 
 // backups first
-exec('zip -r backup_'.strftime('%Y_%m_%d_%H%M',time()).'_files.zip modx');
+exec('zip -r backup_'.strftime('%Y_%m_%d_%H%M',time()).'_files.zip html');
 echo 'File backup created: backup_files_'.strftime('%Y_%m_%d_%H%M',time()).'.zip'.PHP_EOL;
 
 
